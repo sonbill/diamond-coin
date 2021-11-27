@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    overflow-x: hidden;
+}
 #heading {
     border-bottom: 1px solid rgb(216, 216, 216);
     height:50px;
@@ -11,6 +14,7 @@
 #heading .logo-details {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #heading .logo-details i {
     font-size: 24px;
@@ -47,12 +51,20 @@
     transform: translateX(0%);
 }
 
-/* CART */
-#heading .cart-details i {
-    font-size:25px;
-    cursor: pointer;
+/* METAMASK */
+#heading .meta-mask {
+    display: flex;
+    align-items:center;
+    /* max-width: 200px; */
 }
-#heading .cart-details i:active {
+#heading .meta-mask img {
+    width: 30px;
+}
+#heading .meta-mask .meta-mask-text {
+    white-space: nowrap;
+}
+
+#heading .meta-mask i:active {
     color: rgb(161, 161, 161);
 }
 
@@ -60,18 +72,25 @@
 #landing-page {
     display: flex;
     align-items: center;
-    padding: 100px;
+    /* padding: 100px; */
+    height: 100vh;
+    margin: 0 auto;
 }
 
 /* CONTENT */
 #landing-page .content {
     display: flex;
     flex-direction: column;
-    max-height: 500px;
-    max-width: 500px;
-    margin:0 20% 0 0;
-}
+    align-items: center;
 
+}
+#landing-page .content .content-right {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-height: 600px;
+    max-width: 600px;
+}
 /* TITLE */
 #landing-page .content .title {
     margin: 0 0 30px 0;
@@ -135,8 +154,13 @@
 }
 
 /* CONTENT IMAGE */
+#landing-page .content-img-container {
+    display: flex;
+    width: 100%;
+}
 #landing-page .content-img img {
     width: 500px;
+    margin: 0 auto;
 } 
 
 /* DIAMOND DETAILS*/
@@ -156,5 +180,24 @@
 #landing-page .diamond-details .sizing .sizing-bar li {
     display: flex;
     list-style: none;
+}
+/* LANDING PAGE---2*/
+#landing-page-2 .content-2 {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+#landing-page-2 .content-2 .content2-bg {
+    position: relative;
+    width: 100vw;
+}
+#landing-page-2 .content-2 .content2-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#landing-page-2 .content-2 .content2-details {
+    position: absolute;
+    top: 0;
 }
 
