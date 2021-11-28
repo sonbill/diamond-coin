@@ -55,7 +55,22 @@ body {
 #heading .meta-mask {
     display: flex;
     align-items:center;
-    /* max-width: 200px; */
+}
+#heading .meta-mask .meta-mask-btn {
+    padding: 4px;
+    transition: all 0.5s ease-out;
+    border:1px solid rgb(211, 211, 211);
+    color:rgb(115, 115, 115);
+}
+#heading .meta-mask .meta-mask-btn:hover, .meta-mask-btn:focus {
+    background-color: #fff;
+    color: #333;
+    border:1px solid black;
+}
+#heading .meta-mask .meta-mask-btn:active {
+    background-color:#333;
+    color: #fff;
+    transition: all 0.5s ease-in;
 }
 #heading .meta-mask img {
     width: 30px;
@@ -63,6 +78,7 @@ body {
 #heading .meta-mask .meta-mask-text {
     white-space: nowrap;
 }
+
 
 #heading .meta-mask i:active {
     color: rgb(161, 161, 161);
@@ -132,9 +148,7 @@ body {
     align-items: center;
     justify-content: space-around;
     max-width:  200px;
-    height: 50px
-}
-#landing-page .content .btn-details {
+    height: 50px;
     transition: all 0.5s ease-out;
     border-radius:30px;
     border:1px solid rgb(211, 211, 211);
