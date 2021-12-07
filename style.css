@@ -197,13 +197,13 @@ body {
 }
 /* LANDING PAGE---2*/
 #landing-page-2 .content-2 {
-    margin: 0 auto;
+    /* margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 100%; */
 }
 #landing-page-2 .content-2 .content2-bg {
     position: relative;
-    width: 100vw;
+    /* width: 100vw; */
     height: 90vh;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -251,7 +251,9 @@ body {
 }
 
 /* LANDING PAGE---3*/
-
+/* #landing-page-3 {
+    height: 800px;
+} */
 /* CONTENT-3 */
 .content-3 {
     position: relative;
@@ -321,4 +323,87 @@ body {
 #landing-page-3 .content-3 .item-sub {
     color: #A5A6A8;
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE: WIDTH < 740px */
+@media only screen and (max-width: 46.1875em) {
+    /* CONTENT-----------------------------------------------------2 */
+    /* .content-2 {
+        height:100%;
+    } */
+    #landing-page-2 {
+        height:1200px;
+    }
+    .content2-bg img {
+        height: 1000px;
+    }
+    .content2-details {
+        height:1100px;
+        width: 400px;
+        position: relative;
+        left:0px;
+        max-width:500px;
+    }
+    .content2-items {
+        height:100%;
+        
+    }
+
+
+
+
+
+
+
+    /* CONTENT-----------------------------------------------------3 */
+    .title-ct-3 {
+        font-size:45px;
+        flex-wrap: wrap;
+        margin:0 50px 50px 50px;
+    }
+    .content-3 {
+        height: 1400px;
+    }
+    .content-items {
+        display: flex;
+        flex-wrap: wrap;
+        position:absolute;
+        top:20%;
+    }
+    .content-items .item {
+        margin: 20px;
+    }
+}
+
+/* TABLET: WIDTH >= 740px AND WIDTH < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 77.875em) {
+    /* CONTENT-----------------------------------------------------2 */
+
+    /* CONTENT-----------------------------------------------------3 */
+    .content-3 {
+        height: 1000px;
+    }
+    /* .title-ct-3 {
+        font-size:30px;
+    } */
+    .content-items {
+        display: flex;
+        flex-wrap: wrap;
+        position:absolute;
+        top:20%;
+    }
+    .content-items .item {
+        margin: 20px;
+    }
 }
