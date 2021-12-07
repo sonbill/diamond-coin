@@ -204,7 +204,10 @@ body {
 #landing-page-2 .content-2 .content2-bg {
     position: relative;
     /* width: 100vw; */
-    height: 90vh;
+    /* height: 90vh; */
+    display: flex;
+    justify-content: center;
+    height:1000px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 #landing-page-2 .content-2 .content2-bg img {
@@ -216,7 +219,6 @@ body {
     position: absolute;
     color: #fff;
     top: 15%;
-    left:25%;
     padding: 20px;
     background-color:black;
     padding: 50px;
@@ -345,14 +347,13 @@ body {
     #landing-page-2 {
         height:1200px;
     }
-    .content2-bg img {
-        height: 1000px;
+    .content2-bg {
+        display: flex;
+        justify-content: center;
     }
     .content2-details {
         height:1100px;
         width: 400px;
-        position: relative;
-        left:0px;
         max-width:500px;
     }
     .content2-items {
