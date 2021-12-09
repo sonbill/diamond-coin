@@ -400,6 +400,83 @@ body {
     background-color:rgba(0, 0, 0, 0.249);
     display:none;
 }
+/* CONTENT 4 */
+.content-4 {
+    display: flex;
+    margin-top: 300px;
+}
+.content4___img {
+    width: 500px;
+}
+.content4___img img {
+    width: 500px;
+    position: relative;
+    transform: translateX(-300px);
+    transition: all 0.5s ease-out;
+}
+.content4__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    margin-left: 100px;
+    max-width:900px;
+}
+.content4__title {
+    font-size:60px;
+    font-weight: bold;
+}
+.content4__sub {
+    margin-top:50px;
+    width: 900px;
+    line-spacing:2px;
+    letter-spacing: 0.5px;
+}
+.content4__buy-btn {
+    margin-top:50px;
+}
+.content4__buy-btn button {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width: 200px;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+    border-radius:30px;
+    border:1px solid rgb(211, 211, 211);
+    color:rgb(115, 115, 115);
+}
+
+.content4__buy-btn button:hover,button:focus  {
+    background-color: #fff;
+    color: #333;
+    border:1px solid black;
+}
+.content4__buy-btn img {
+    width: 20px;
+}
+.buy-btn__text {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MOBILE NAV */
 @media (max-width:63.9375em) {
     /* NAV MOBILE */
