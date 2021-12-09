@@ -7,6 +7,9 @@ body {
     overflow-x: hidden;
 }
 #heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-bottom: 1px solid rgb(216, 216, 216);
     height:50px;
 }
@@ -27,6 +30,9 @@ body {
 
 /* HEADING ITEM */
 .heading-items {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
     width: 1000px;
 }
 .heading-items .heading-item {
@@ -58,8 +64,12 @@ body {
 #heading .meta-mask {
     display: flex;
     align-items:center;
+    justify-content: center;
+    width: 300px;
 }
 #heading .meta-mask .meta-mask-btn {
+    display:flex;
+    align-items:center;
     padding: 4px;
     transition: all 0.5s ease-out;
     border:1px solid rgb(211, 211, 211);
@@ -77,6 +87,7 @@ body {
 }
 #heading .meta-mask img {
     width: 30px;
+    margin-right: 10px;
 }
 #heading .meta-mask .meta-mask-text {
     white-space: nowrap;
@@ -330,22 +341,103 @@ body {
     color: #A5A6A8;
     text-align: center;
 }
+/* MOBILE NAV */
+.mobile-menu-btn {
+    display: none;
+}
+.mobile-menu-btn .menu-icon {
+    font-size: 28px;
+}
+
+.nav-mobile {
+    position:fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+}
+.nav__mobile-close {
+    font-size:40px;
+    color: #666;
+    position: absolute;
+    right: 1rem;
+}
+.nav__mobile-items {
+    margin-top: 30px;
+    list-style: none;
+}
+.nav__mobile-items li {
+    /* margin-bottom: 10px; */
+    /* border: 1px solid black; */
+}
+.nav__mobile-item {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #333;
+    display: block;
+    padding:8px 0;
+}
+
+
+/* OVER LAY */
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.249)
+}
 
 
 
 
 
 
-
-
-
-
-
+/* MOBILE NAV */
+@media (max-width:63.9375em) {
+    /* NAV MOBILE */
+    .mobile-menu-btn {
+        display: flex;
+        align-items:center;
+    }
+    .mobile-menu-btn .menu-icon {
+        display: block;
+    }
+    /* NAV PC */
+    .heading-items {
+        display: none;
+    }
+    /* METAMASK BTN */
+    .meta-mask-btn {
+        display: block;
+    }
+    .meta-mask-btn .meta-mask-text {
+        display: none;
+    }
+    /* HEADING */
+    #heading {
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .meta-mask {
+        position: absolute;
+        left: 75%;    
+    }
+    .meta-mask .meta-mask-btn img {
+        margin: 0 auto !important;
+    }
+    
+}
 
 /* MOBILE: WIDTH < 740px */
 @media only screen and (max-width: 46.1875em) {
     /* --------------------------HEADER--------------------------- */
-
+    .meta-mask {
+        display:none !important;
+    }
     /* CONTENT-----------------------------------------------------1 */
     #landing-page {
         display: flex;
@@ -392,8 +484,6 @@ body {
         height:100%;
         
     }
-
-
     /* CONTENT-----------------------------------------------------3 */
     .title-ct-3 {
         font-size:45px;
@@ -418,16 +508,15 @@ body {
 /* TABLET: WIDTH >= 740px AND WIDTH < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 77.875em) {
     /* --------------------------HEADER--------------------------- */
+    #heading {
+        display: flex;
+        justify-content: space-around;
+    }
     .heading-items {
         width: 400px;
     }
-
-
-
-    .meta-mask-btn {
-        width: 200px;
-        display: flex;
-        flex-wrap: nowrap;
+    .meta-mask {
+        width: 200px !important;
     }
     .meta-mask-btn img {
         font-size:10px;
@@ -436,7 +525,6 @@ body {
     /* CONTENT-----------------------------------------------------2 */
     #landing-page .content .content-right {
         width: 90%;
-
     }
     #landing-page .content-img {
         max-width:50%;
@@ -448,9 +536,6 @@ body {
     #landing-page .content-right .sub-title {
         text-align: justify:
     }
-    
-
-
     /* CONTENT-----------------------------------------------------3 */
     .content-3 {
         height: 1300px;
