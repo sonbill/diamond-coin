@@ -347,6 +347,7 @@ body {
 }
 .mobile-menu-btn .menu-icon {
     font-size: 28px;
+    cursor:pointer;
 }
 
 .nav-mobile {
@@ -356,30 +357,33 @@ body {
     bottom: 0;
     width: 320px;
     max-width: 100%;
-    background-color: #fff;
+    background-color:#333;
+    /* transform:translateX(320px); */
+
 }
 .nav__mobile-close {
     font-size:40px;
     color: #666;
     position: absolute;
     right: 1rem;
+    cursor: pointer;
 }
 .nav__mobile-items {
-    margin-top: 30px;
+    margin: 50px 0 0 0;
     list-style: none;
 }
-.nav__mobile-items li {
-    /* margin-bottom: 10px; */
-    /* border: 1px solid black; */
-}
+
 .nav__mobile-item {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #333;
     display: block;
     padding:8px 0;
+    color:rgb(149, 149, 149);
+    transition: all 0.5s ease-out;
 }
-
+.nav__mobile-item:hover {
+    color: #fff;
+}
 
 /* OVER LAY */
 .nav-overlay {
@@ -388,7 +392,8 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color:rgba(0, 0, 0, 0.249)
+    background-color:rgba(0, 0, 0, 0.249);
+    display:none;
 }
 
 
