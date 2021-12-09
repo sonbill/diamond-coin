@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 300px;
+    width: 100px;
 }
 #heading .meta-mask .meta-mask-btn {
     display:flex;
@@ -266,7 +266,6 @@ body {
 #landing-page-2 .content-2 .content2-details .content2-item i:hover {
     transform: scale(2);
 }
-
 /* LANDING PAGE---3*/
 /* #landing-page-3 {
     height: 800px;
@@ -284,7 +283,6 @@ body {
     margin-top:200px;
     
 }
-
 /* TITLE */
 .title-ct-3 {
     color: white;
@@ -297,7 +295,6 @@ body {
     top:10%;
     
 }
-
 /* CONTENT-ITEMS */
 .content-items {
     display:flex;
@@ -307,7 +304,6 @@ body {
     top:39%;
 
 }
-
 /* ITEM */
 .item {
     width: 250px;
@@ -320,7 +316,6 @@ body {
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
 /* LOGO */
 .item i {
     padding: 5px;
@@ -331,7 +326,6 @@ body {
     font-size:40px;
     border-radius: 10px;
 }
-
 /* TITLE */
 #landing-page-3 .content-3 .item-title {
     margin-top:28px;
@@ -344,12 +338,21 @@ body {
 /* MOBILE NAV */
 .mobile-menu-btn {
     display: none;
+    color:rgb(149, 149, 149);
+    transition: all 0.5s ease-out;
+    width: 50px;
+    height: 50px;
+}
+.mobile-menu-btn i {
+    margin: 0 auto;
+}
+.mobile-menu-btn:hover {
+    color:black;
 }
 .mobile-menu-btn .menu-icon {
     font-size: 28px;
     cursor:pointer;
 }
-
 .nav-mobile {
     position:fixed;
     right: 0;
@@ -358,8 +361,7 @@ body {
     width: 320px;
     max-width: 100%;
     background-color:#333;
-    /* transform:translateX(320px); */
-
+    transform:translateX(320px);
 }
 .nav__mobile-close {
     font-size:40px;
@@ -367,12 +369,16 @@ body {
     position: absolute;
     right: 1rem;
     cursor: pointer;
+    color:rgb(149, 149, 149);
+    transition: all 0.5s ease-out;
+}
+.nav__mobile-close:hover {
+    color: #fff;
 }
 .nav__mobile-items {
     margin: 50px 0 0 0;
     list-style: none;
 }
-
 .nav__mobile-item {
     text-decoration: none;
     font-size: 1.2rem;
@@ -384,7 +390,6 @@ body {
 .nav__mobile-item:hover {
     color: #fff;
 }
-
 /* OVER LAY */
 .nav-overlay {
     position: fixed;
@@ -395,12 +400,6 @@ body {
     background-color:rgba(0, 0, 0, 0.249);
     display:none;
 }
-
-
-
-
-
-
 /* MOBILE NAV */
 @media (max-width:63.9375em) {
     /* NAV MOBILE */
@@ -429,7 +428,7 @@ body {
     }
     .meta-mask {
         position: absolute;
-        left: 75%;    
+        left: 84%;    
     }
     .meta-mask .meta-mask-btn img {
         margin: 0 auto !important;
@@ -521,7 +520,7 @@ body {
         width: 400px;
     }
     .meta-mask {
-        width: 200px !important;
+        width: 100px;
     }
     .meta-mask-btn img {
         font-size:10px;
