@@ -4,12 +4,7 @@ var closeBtn = document.querySelectorAll('.nav__mobile-close')[0]
 var overlay = document.querySelectorAll('.nav-overlay')[0]
 var eCoinImg = document.querySelectorAll('.content4___img')[0]
 
-eCoinImg.addEventListener('mouseover', function () {
-    eCoinImg.style.transform = "translateX(320px)";
-})
-eCoinImg.addEventListener('mouseout', function () {
-    eCoinImg.style.transform = "translateX(-300px)"
-})
+
 
 closeBtn.onclick = function () {
     navMobile.style.transform = "translateX(320px)";

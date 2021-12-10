@@ -411,8 +411,6 @@ body {
 .content4___img img {
     width: 500px;
     position: relative;
-    transform: translateX(-300px);
-    transition: all 0.5s ease-out;
 }
 .content4__details {
     display: flex;
@@ -427,13 +425,16 @@ body {
     font-weight: bold;
 }
 .content4__sub {
-    margin-top:50px;
+    margin-top:60px;
     width: 900px;
-    line-spacing:2px;
+    line-spacing:5px;
     letter-spacing: 0.5px;
 }
+.content4__sub p {
+    margin-bottom: 30px;
+}
 .content4__buy-btn {
-    margin-top:60px;
+    margin-top:30px;
 }
 .content4__buy-btn button {
     display:flex;
