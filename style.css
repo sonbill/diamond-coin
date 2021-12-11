@@ -576,6 +576,38 @@ footer {
     .meta-mask .meta-mask-btn img {
         margin: 0 auto !important;
     }
+    /* CONTENT 4 */
+    #landing-page-4 {
+        margin: 100px 0 100px 0 ;
+    }
+    .content-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .content4___img {
+        display: flex;
+        justify-content: center;
+        margin:50px auto;
+    }
+    .content4__details {
+        width: 400px;
+        margin:100px auto;
+    }
+    .content4__title {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .content4__sub {
+        width: 100%;
+        text-align: center;
+    }
+    .content4__buy-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+
     /* FOOTER */
     footer {
         padding:50px 20px 50px 20px;
@@ -726,6 +758,40 @@ footer {
         margin: 20px;
         width: 50%;
     }
+    /* CONTENT-----------------------------------------------------4 */
+    .content-4 {
+        display: flex;
+        flex-direction: column;
+    }
+    .content4___img {
+        display: flex;
+        justify-content: center;
+        margin: 50px auto;
+    }
+    .content4__details {
+        width: 600px;
+        justify-content: center;
+        margin:100px auto;
+    }
+    .content4__title {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .content4__sub {
+        width: 100%;
+        text-align: center;
+    }
+    .content4__buy-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+
     /* FOOTER */
     footer {
         padding:50px 20px 50px 20px;
