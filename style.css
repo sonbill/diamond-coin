@@ -576,6 +576,31 @@ footer {
     .meta-mask .meta-mask-btn img {
         margin: 0 auto !important;
     }
+    /* FOOTER */
+    footer {
+        padding:50px 20px 50px 20px;
+    }
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+    .footer-col-items {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-col-items li {
+        margin-bottom:15px;
+    }
+    .col a {
+        margin-bottom:5px;
+    }
+    .col h5 {
+        margin-bottom:5px;
+    }
+    .social-items {
+        display: flex;
+        justify-content: center;
+    }
     
 }
 
@@ -701,5 +726,9 @@ footer {
         margin: 20px;
         width: 50%;
     }
+    /* FOOTER */
+    footer {
+        padding:50px 20px 50px 20px;
+    }
 }
-/* FOOTER */
+
